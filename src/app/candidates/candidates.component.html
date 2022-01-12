@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="mainHeader">
+    CANDIDATES</div>
+
+<div class="mainDiv">
+    <div style="padding: 12px;">
+        <div fxLayout="row" style="border-left: 1px solid;">
+            <div class="tableHeader">Name</div>
+            <div class="tableHeader">Phone</div>
+            <mat-form-field fxFlex="1 1 30%">
+                <mat-label>Search</mat-label>
+                <input [formControl]="searchFilterForm" matInput placeholder="Search" autocomplete="off">
+                <mat-icon *ngIf="searchFilterForm.value === ''" matSuffix>search</mat-icon>
+                <mat-icon *ngIf="searchFilterForm.value !== ''" (click)="removeFilter()" color="primary" matSuffix>close
+                </mat-icon>
+            </mat-form-field>
+        </div>
+
+        <div class="tableItem" fxLayout="column">
+            <div *ngIf="filteredArray.length < 1" class="notFound">
+                <div>Not Found!</div>
+            </div>
+            <div *ngFor="let data of filteredArray;index as index"
+                [style.background-color]="index %2 ==1 ? '#f5f1e6': ''">
+                <div style="margin: 12px 0;align-items: center;">
+                    <div fxFlex="35%">{{data.name}} </div>
+                    <div fxFlex="35%">{{data.phone}} </div>
+                    <div fxFlex="30%" fxLayoutAlign="end end" style="padding-right:12px" (click)="openInfoDialog(data)">
+                        <mat-icon matTooltip="Info about the candidate">info</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

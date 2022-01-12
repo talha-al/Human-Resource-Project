@@ -1,0 +1,15 @@
+.item {
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+}
+.item:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 540px) {
+    .item{
+        font-size: medium;
+    }
+}

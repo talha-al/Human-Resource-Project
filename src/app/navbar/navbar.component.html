@@ -1,0 +1,10 @@
+<div fxFlex="1 1 auto" style="background-color:rgb(20, 20, 20); color: white; height: 70px;"
+    fxLayoutAlign="start center">
+    <div fxFlex="20%" style="padding-left: 3vh; cursor: pointer" fxLayout="row" (click)="goToRouterPage('home')">
+        <mat-icon>home</mat-icon>
+    </div>
+    <div fxFlex="1 1 auto" fxLayoutAlign="end end" style="padding-right: 5vh" fxLayoutGap="26px">
+        <div class="item" (click)="goToRouterPage('candidates')">Candidates</div>
+        <div class="item" (click)="goToRouterPage('aboutUs')">About Us</div>
+    </div>
+</div>

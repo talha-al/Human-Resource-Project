@@ -1,0 +1,89 @@
+.mainDiv {
+    position: relative;
+    height: 100vh;
+}
+
+.imageText {
+    flex-direction: column;
+    line-height: normal;
+    color: white;
+    font-weight: 400;
+    font-size: x-large;
+    position: absolute;
+    left: 5%;
+    right: 40%;
+    border: 5px solid;
+    padding: 4%;
+}
+
+.imageText:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.icons {
+    padding: 18px;
+    .mat-icon {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+    .mat-icon {
+        font-size: 30px !important;
+    }
+    .imageText {
+        border: 2px solid;
+        padding: 1%;
+        font-weight: 200;
+        font-size: medium;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+    .mat-icon {
+        font-size: 30px !important;
+    }
+    .imageText {
+        border: 2px solid;
+        padding: 1%;
+        font-weight: 200;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .mat-icon {
+        font-size: 30px !important;
+    }
+    .imageText {
+        border: 2px solid;
+        padding: 1%;
+        font-weight: 200;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mat-icon {
+        font-size: 20px !important;
+    }
+    .imageText {
+        font-weight: 200;
+        font-size: small;
+        padding: 1%;
+        border: 1px solid;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .icons {
+        padding: 4px;
+    }
+    .imageText {
+        font-weight: 150;
+        font-size: small;
+        border: 3px solid;
+        padding: 3%;
+    }
+}

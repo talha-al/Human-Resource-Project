@@ -1,0 +1,50 @@
+:host {
+    flex-direction: column;
+}
+
+.mainHeader {
+    margin-top: 3vh;
+    padding-bottom: 16px;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.mainDiv {
+    min-height: 100vh;
+    padding: 5vh;
+}
+
+.tableHeader {
+    padding: 12px;
+    font-weight: bold;
+    flex: 1 1 35%;
+}
+
+.mat-icon:hover {
+    cursor: pointer;
+}
+
+.tableItem {
+    border: 1px solid;
+    padding: 8px;
+}
+
+.notFound {
+    margin: 0 26px;
+    font-weight: bold;
+    height: 50%;
+}
+
+@media only screen and (max-width: 540px) {
+    :host {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-height: 540px) {
+    :host {
+        font-size: small;
+    }
+}

@@ -1,0 +1,89 @@
+<div class="mainHeader" fxLayoutAlign="space-between center">
+    <div style="font-weight: bold;">CANDIDATE INFORMATION</div>
+    <mat-icon (click)="close()">close</mat-icon>
+</div>
+
+<div fxLayout="column" style="padding:8px;" fxLayoutGap="24px">
+    <div fxLayout="row">
+        <div class="header">Id: </div>
+        <div class="item"> {{ dialogData.id}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">Name: </div>
+        <div class="item"> {{ dialogData.name}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">Username: </div>
+        <div class="item"> {{ dialogData.username}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">E-mail: </div>
+        <div class="item"> {{ dialogData.email}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">Phone: </div>
+        <div class="item"> {{ dialogData.phone}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">Website: </div>
+        <div class="item"> {{ dialogData.website}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">Address; </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Street: </div>
+        <div class="item"> {{ dialogData.address.street}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Suite: </div>
+        <div class="item"> {{ dialogData.address.suite}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">City: </div>
+        <div class="item"> {{ dialogData.address.city}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Zip code: </div>
+        <div class="item"> {{ dialogData.address.zipcode}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Geographic Latitude: </div>
+        <div class="item"> {{ dialogData.address.geo.lat}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Geographic Longitude: </div>
+        <div class="item"> {{ dialogData.address.geo.lng}} </div>
+    </div>
+
+    <div fxLayout="row">
+        <div class="header">Company; </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Name: </div>
+        <div class="item"> {{ dialogData.company.name}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">Catch Phrase: </div>
+        <div class="item"> {{ dialogData.company.catchPhrase}} </div>
+    </div>
+
+    <div style="padding-left: 2vh;" fxLayout="row">
+        <div class="subHeader">BS: </div>
+        <div class="item"> {{ dialogData.company.bs}} </div>
+    </div>
+</div>
